@@ -1,0 +1,28 @@
+//- add a clear button
+//- maniputlate the json
+// read the article on making a autocomplete form - what does autocomplete in html do - decided to go a different direction
+  - autocomplete in hmtl autocomplete user's previous inputs. 
+  - possibly make a robust search?
+// filter set by type "expansion" to get only the relevant ones
+// sort by date
+// manabuttons work now
+// solved problem with manabuttons resizing with the window
+  // container needs to be set size
+// stylize the mana buttons up and down- look at reddit for an example
+  // svg for style? look into it
+  // make svg unhilightable 
+
+// remove unreleased sets 
+// populated cards
+// got cards from scyfall and sorted by flash/instant
+// sorted cards by mana cost
+// sorted cards by cmc
+- make undo hoverable - stylize all buttons
+- better understand async and promise
+- get vs post, create a database with scryfall
+- start populating cards
+- caching data - THIS WILL BE A BIG ONE THAT I NEED TO FIGURE OUT AFTER FUNCTIONING
+- add a modify total cmcm button?
+  - change last one to be adjust cmc
+- add a ? about button that when hovered explains how to use it.
+  - make it hover over the rest of the ui

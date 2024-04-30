@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  width: 10%;
+  height: 10%;
+}
+
+h1 {
+  margin-left: 10%;
+  margin-top: 2%;
+}
+
+.card {
+  width: 10%;
+}
+
+.inputs {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.mana-number, .cmc-input {
+  position: relative;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+
+.mana-symbol, .cmc-img{
+  width:100%;
+  height:100%;
+}
+
+.arrows {
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+
+.up, .cmcup{
+  transform: rotate(270deg);
+}
+
+.down, .cmcdown {
+  transform: rotate(90deg);
+}
+
+.hidden {
+  display: none;
+}
+
+#answers {
+  position: absolute;
+}
+
+#question{
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+
+#bigHead{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#sets {
+  width: 15%;
+}
+
+#oops {
+  display: flex;
+  justify-content: center;
+}
+
+#manaButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+#manaButtons div {
+  width: 8%;
+  height: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+}

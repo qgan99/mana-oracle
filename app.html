@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="app.css">
+    <script src="app.js"></script>
+    <title>Mana Oracle</title>
+  </head>
+  <body>
+    <div id="mainCards">
+      <section id=bigHead>
+        <select id="sets">
+          <option disabled selected hidden>Choose a Set</option>
+        </select>
+        <svg id="question">
+          <path d="M 11.07 12.85 c 0.77 -1.39 2.25 -2.21 3.11 -3.44 c 0.91 -1.29 0.4 -3.7 -2.18 -3.7 c -1.69 0 -2.52 1.28 -2.87 2.34 L 6.5 8 C 7.25 4.83 9.18 3 11.99 3 c 2.35 0 3.96 1.07 4.78 2.41 c 0.7 1.15 1.11 3.3 0.03 4.9 c -1.2 1.77 -2.35 2.31 -2.97 3.45 c -0.25 0.46 -0.35 0.76 -0.35 2.24 h -2.98 c -0.01 -0.78 -0.13 -2.05 0.48 -3.15 z M 14 20 c 0 1.1 -0.9 2 -2 2 s -2 -0.9 -2 -2 s 0.9 -2 2 -2 s 2 0.9 2 2 z"></path>
+        </svg>
+      </section>
+      <section id="manaButtons">
+        <div>
+          <svg class="arrows up w">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"></path>
+          </svg>
+          <section class="mana-number">
+            <image class="mana-symbol" src="mana-symbols/w.png"/>
+            <h2 class="inputs" id="w">0</h2>
+          </section>
+          <svg class="arrows down w">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"></path>
+          </svg>
+        </div>
+        <div>
+          <svg class="arrows up u">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"></path>
+          </svg>
+          <section class="mana-number">
+            <image class="mana-symbol" src="mana-symbols/u.png"/>
+            <h2 class="inputs" id="u">0</h2>
+          </section>
+          <svg class="arrows down u">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"></path>
+          </svg>
+        </div>
+        <div>
+          <svg class="arrows up b">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"></path>
+          </svg>
+          <section class="mana-number">
+            <image class="mana-symbol" src="mana-symbols/b.png"/>
+            <h2 class="inputs" id="b">0</h2>
+          </section>
+          <svg class="arrows down b">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"></path>
+          </svg>
+        </div>
+        <div>
+          <svg class="arrows up r">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"></path>
+          </svg>
+          <section class="mana-number">
+            <image class="mana-symbol" src="mana-symbols/r.png"/>
+            <h2 class="inputs" id="r">0</h2>
+          </section>
+          <svg class="arrows down r">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"></path>
+          </svg>
+        </div>
+        <div>
+          <svg class="arrows up g">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"></path>
+          </svg>
+          <section class="mana-number">
+            <image class="mana-symbol" src="mana-symbols/g.png"/>
+            <h2 class="inputs" id="g">0</h2>
+          </section>
+          <svg class="arrows down g">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"></path>
+          </svg>
+        </div>
+        <div>
+          <svg class="arrows cmcup C" id="cmcup">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"></path>
+          </svg>
+          <section class="cmc-input">
+            <image class="cmc-img" src="mana-symbols/C.png"/>
+            <h2 class="inputs" id="CMC">0</h2>
+          </section>
+          <svg class="arrows cmcdown C" id="cmcdown">
+            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"></path>
+          </svg>
+        </div>
+        
+      </section>
+      <section id="oops">
+        <!--<button id="undo">undo</button>-->
+        <button id="clear">clear</button>
+      </section>
+    </div>
+    <section id="cards">
+    <div class="hidden" id="answers">
+      <h1>Hello :)</h1>
+      <button id="hideAnswer">Close</button>
+    </div>
+    </section>
+  </body>
+</html>
